@@ -1,12 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#define fastio ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+
 int main(){
-	std::string str;
-	std::cin >> str;
+    fastio;
+	string str;
+	cin >> str;
 	for(int idx = 0; idx < str.length(); ++idx){
 		if(str.at(idx) - '0' != idx + 1){
-			std::cout << "-1";
+			cout << "-1";
 			return 0;
 		}
 	}	
-	std::cout << str.length();
+	cout << str.length();
+    return 0;
 }
